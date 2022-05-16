@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab08</title>
+    <style>
+      div {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        opacity: 0.7;
+        text-align: center;
+        font-size: 1.7rem;
+        color: aliceblue;
+      }
+      .verticaal {
+        margin: 30px 20px 0 0;
+        transform: skew(0, -20deg);
+      }
+      #een {
+        background-color: blue;
+        position: relative;
+        z-index: 1;
+        margin-left: calc(50% - 100px);
+      }
+      #twee {
+        background-color: red;
+        position: relative;
+        z-index: 10;
+        margin-left: calc(50% - 100px);
+        margin-top: -5%;
+      }
+      #drie {
+        background-color: green;
+        position: relative;
+        z-index: 20;
+        margin-left: calc(50% - 100px);
+        margin-top: -5%;
+      }
+      #een:hover {
+        animation-name: spin;
+        animation-duration: 4000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      #twee:hover {
+        animation-name: spin;
+        animation-duration: 4000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      #drie:hover {
+        animation-name: spin;
+        animation-duration: 4000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="verticaal" id="een"><br />Element 1<br />index-1</div>
+    <div class="verticaal" id="twee"><br />Element 2<br />index-2</div>
+    <div class="verticaal" id="drie"><br />Element 3<br />index-3</div>
+  </body>
+</html>

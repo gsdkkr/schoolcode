@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+
+  padding: 0;
+
+  height: 100%;
+
+  width: 100%;
+}
+
+.div1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  text-align: center;
+
+  box-shadow: 5px 5px 10px black;
+
+  width: 80%;
+
+  height: 80px;
+
+  font-size: 20px;
+
+  margin: auto;
+
+  margin-top: 3%;
+
+  margin-bottom: 3%;
+
+  background-color: crimson;
+}
+
+.div2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  text-align: center;
+
+  box-shadow: 5px 5px 10px black;
+
+  width: 80%;
+
+  height: 220px;
+
+  font-size: 15px;
+
+  margin-left: 5%;
+
+  margin-bottom: 3%;
+
+  background-color: chocolate;
+
+  background-image: url("https://icons.iconarchive.com/icons/yootheme/social-bookmark/256/social-google-box-icon.png");
+
+  background-position: right;
+
+  background-repeat: no-repeat;
+}
+
+.div3 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  text-align: center;
+
+  box-shadow: 5px 5px 10px black;
+
+  width: 80%;
+
+  height: 150px;
+
+  margin-left: 3%;
+
+  background-color: blueviolet;
+
+  background-image: url("https://www.freeiconspng.com/thumbs/mozilla-firefox-icon/mozilla-firefox-icon-0.png");
+
+  background-position: left;
+
+  background-repeat: no-repeat;
+
+  background-size: 150px;
+}
+
+.div4 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  text-align: center;
+
+  box-shadow: 5px 5px 10px black;
+
+  width: 80%;
+
+  height: 100px;
+
+  margin-left: 0%;
+
+  background-color: rgba(0, 0, 255, 0.137);
+}

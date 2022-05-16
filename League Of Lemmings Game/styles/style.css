@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+}
+.speelveld {
+    position: absolute;
+    background-image: url("/images/backrgound.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 800px;
+}
+.logo {
+    position: absolute;
+    background-image: url("/images/League-of-lemmings.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10%;
+    width: 10%;
+    margin-left: 720px;
+}
+#speler {
+    position: absolute;
+    background-image: url("/images/teemo-l.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    margin-top: 150px;
+}
+#bal {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 100%;
+    margin-left: 50px;
+    display: block;
+    transition: margin 2s;
+}
+#lemming {
+    position: absolute;
+    background-image: url("/images/lemmings.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin-left: calc(800px - 50px);
+    margin-top: 50px;
+}
+#lemming2 {
+    position: absolute;
+    background-image: url("/images/lemmings.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin-left: calc(800px - 50px);
+    margin-top: 100px;
+}
+#lemming3 {
+    position: absolute;
+    background-image: url("/images/lemmings.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin-left: calc(800px - 50px);
+    margin-top: 150px;
+}
+#lemming4 {
+    position: absolute;
+    background-image: url("/images/lemmings.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin-left: calc(800px - 50px);
+    margin-top: 200px;
+}
+#lemming5 {
+    position: absolute;
+    background-image: url("/images/lemmings.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin-left: calc(800px - 50px);
+    margin-top: 250px;
+}
+#lemming6 {
+    position: absolute;
+    background-image: url("/images/lemmings.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin-left: calc(800px - 50px);
+    margin-top: 300px;
+}
+#fire {
+    background-image: url("/images/fire.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65px;
+    width: 65px;
+    border-radius: 15px;
+    float: left;
+}
+#wind {
+    background-image: url("/images/wind.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65px;
+    width: 65px;
+    border-radius: 15px;
+    float: left;
+}
+#ice {
+    background-image: url("/images/ice.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65px;
+    width: 65px;
+    border-radius: 15px;
+    float: left;
+}
+#earth {
+    background-image: url("/images/earth.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65px;
+    width: 65px;
+    border-radius: 15px;
+    float: left;
+}
+.elements {
+    margin-top: 325px;
+    margin-left: 250px;
+}
+.element {
+    transition: transform 0.5s;
+}
+.element:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}

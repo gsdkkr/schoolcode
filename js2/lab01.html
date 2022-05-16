@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 01</title>
+</head>
+<body>
+    <h2>Lab 01</h2>
+    <h3>Factuur</h3>
+
+    <script>
+        let geldString = Intl.NumberFormat('en-US');
+        
+        var klantnaam = prompt("voer hier uw eigen naam in.");
+        var aantal = parseInt(prompt("Aantal boeken te bestellen?"));
+        var titel = "JavaScript";
+        var prijs = 29.999999;
+        var bedrag = aantal * prijs
+        var btw = bedrag / 6
+        var totaal = btw + bedrag
+        document.write(
+            `<br>Bedankt voor je bestelling: ${klantnaam}`
+        );
+        document.write(`<br>Boektitel is: ${titel}`);
+        document.write(`<br>Aantal te bestellen: ${aantal}`);
+        document.write(`<br>Prijs per boek is: ${prijs.toFixed(2)} Euro`);
+        document.write(`<br>Bedrag is: ${bedrag.toFixed(2)} Euro`)
+        document.write(`<br>BTW is: ${geldString.format(btw)} Euro`)
+        document.write(`<br>Totaal inclusief BTW is: ${totaal.toFixed(2)} Euro`)
+    </script>
+    
+</body>
+</html>

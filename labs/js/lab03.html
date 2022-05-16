@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 3: Toon testarray
+      var testarray = new Array("een", "twee", "3", "vier", "5");
+      console.log(testarray);
+      // 4: Toon datatype of 5de object (string)
+      var testarray = new Array("een", "twee", "3", "vier", "5");
+      console.log(typeof testarray[4]);
+      // 5: Verwijder 5de element
+      var testarray = new Array("een", "twee", "3", "vier", "5");
+      delete testarray[4];
+      console.log("Element Verwijderd");
+      // 6: Toon testarray (5de = empty)
+      console.log(testarray);
+      // 7: Voeg element toe met waarde "nul"
+      var testarray2 = new Array(null, "twee", "3", "vier", "5");
+      // 8: Toon testarray
+      console.log(testarray2);
+      // 9: Delete index[0]
+      var index = new Array("een", "twee", "3", "vier", "5");
+      console.log(index);
+      delete index[0];
+      // 10: Toon Datatype index [0] (undefined)
+      console.log(typeof index[0]);
+      // 11: Verwijder eerste element
+      delete index[1];
+      console.log(index);
+      // 12: Toon testarray
+      console.log(testarray);
+      // 13: Verwijder tweede element
+      delete testarray[1];
+      // 14: Toon testarray
+      console.log(testarray);
+      // 15: Als index[2] bestaat, verwijder hem
+      delete index[2];
+      // 16: Toon testarray
+      console.log(testarray);
+      console.log(index);
+    </script>
+  </body>
+</html>

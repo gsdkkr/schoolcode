@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lab 6</title>
+
+    <link rel="stylesheet" href="labs.css" />
+  </head>
+  <body>
+    <script>
+      {
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, "0");
+        var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+        var jjjj = today.getFullYear();
+        today = mm + "/" + dd + "/" + jjjj;
+        console.log(today);
+      }
+
+      {
+        var date = new Date();
+        date.setDate(date.getDate() + 5);
+        var dd = String(date.getDate()).padStart(2, "0");
+        var mm = String(date.getMonth() + 1).padStart(2, "0"); //January is 0!
+        var jjjj = date.getFullYear();
+        date = mm + "/" + dd + "/" + jjjj;
+        console.log(date);
+      }
+
+      
+      bezorgkosten = 15;
+      const woonplaats = prompt("Waar woont U?");
+      const postcode = prompt("wat is uw postcode?");
+
+      if (woonplaats.toLowerCase() == "amsterdam") {
+          alert("U betaalt geen bezorgkosten!")
+          bezorgkosten = 0;
+      }
+    </script>
+  </body>
+</html>

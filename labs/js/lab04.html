@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // 2
+        var palet = new Array("Blauw", "Rood", "Groen", "Oranje", "Geel")
+        // 3
+        console.log(palet)
+        // 4
+        var niewekleur = prompt('Typ een nieuwe kleur in: ')
+        // 5
+        var palet = new Array(niewekleur, "Blauw", "Rood", "Groen", "Oranje", "Geel")
+        // 6
+        console.log(palet)
+        // 7
+        var niewekleur = prompt('Typ een nieuwe kleur in: ')
+        // 8 
+        var palet = new Array("Blauw", "Rood", "Groen", "Oranje", "Geel", niewekleur)
+        // 9
+        console.log(palet)
+        // 10
+        var palet3 = new Array("Blauw", "Rood", "Groen", "Oranje", "Geel", niewekleur)
+        var paletSorted = palet3.sort()
+        // 11
+        console.log(paletSorted)
+        // 12
+        var palet1 = palet3.slice(0, 3)
+        var palet2 = palet3.slice(3, 6)
+        // 13 + 14
+        console.log("palet1 " + palet1 + "\n" + "palet2 " + palet2);
+        // 15
+        var palet4 = palet3.slice()
+        //16
+        console.log(palet4)
+    </script>
+</body>
+</html>

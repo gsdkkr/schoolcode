@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.dk {
+    position: absolute;
+    left: 650px;
+    margin-top: 28%;
+}
+
+.dk img{
+    width: 250px;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    transition: all .3s ease-in-out;
+}
+
+#banaan {
+    position: absolute;
+    left: 90px;
+}
+
+#banaan img {
+    width: 100px;
+    margin-top: 82vh;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: bounceB;
+    -moz-animation-name: bounceB;
+    transition: all .3s ease-in-out;
+}
+
+
+.counter {
+    background-image: url("/img/counter.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: calc(50% - 5vw);
+    margin-top: -0.005%;
+    margin-right: 4%;
+    height: 10vh;
+    width: 10vw;
+}
+
+.counter h1 {
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    margin-left: 25%;
+    padding-top: 1.5vh;
+    transition: all .3s ease-in-out;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-125px);
+		-ms-transform:     translateY(-125px);
+		transform:         translateY(-125px)
+	}
+	80% {
+		-webkit-transform: translateY(-5px);
+		-ms-transform:     translateY(-5px);
+		transform:         translateY(-5px)
+	}
+}
+@keyframes bounceB {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-50px);
+		-ms-transform:     translateY(-50px);
+		transform:         translateY(-50px)
+	}
+	80% {
+		-webkit-transform: translateY(-5px);
+		-ms-transform:     translateY(-5px);
+		transform:         translateY(-5px)
+	}
+}
+
+.dk img:hover {
+  cursor: default;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
